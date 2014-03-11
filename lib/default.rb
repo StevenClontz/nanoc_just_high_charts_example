@@ -1,12 +1,15 @@
 # All files in the 'lib' directory will be loaded
 # before nanoc starts compiling.
 
-require 'just_high_charts'
-include JustHighCharts::LayoutHelper
+require 'action_view'
+include ActionView::Helpers::TagHelper
+require 'active_support/core_ext'
+require 'lazy_high_charts'
+include LazyHighCharts::LayoutHelper
 
 def highchart_example
   # https://github.com/michelson/lazy_high_charts/wiki/Combination-Chart
-  chart = JustHighCharts::HighChart.new('graph') do |f|
+  chart = LazyHighCharts::HighChart.new('graph') do |f|
     f.title({ text: "Combination chart"})
     f.options[:xAxis][:categories] = 
       ['Apples', 'Oranges', 'Pears', 'Bananas', 'Plums']
