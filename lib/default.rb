@@ -1,9 +1,6 @@
 # All files in the 'lib' directory will be loaded
 # before nanoc starts compiling.
 
-require 'action_view'
-include ActionView::Helpers::TagHelper
-require 'active_support/core_ext'
 require 'lazy_high_charts'
 include LazyHighCharts::LayoutHelper
 
