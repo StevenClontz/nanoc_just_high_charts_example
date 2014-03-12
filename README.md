@@ -6,7 +6,7 @@ A very simple proof-of-concept which originally used my
 experiment with a [nanoc](http://nanoc.ws) site
 (that is, without Rails)
 
-Since [lazy_high_charts](/michelson/lazy_high_charts) merged in some
+Since [lazy_high_charts](https://github.com/michelson/lazy_high_charts) merged in some
 requirement tweaks I made to allow it to be used directly without Rails,
 this example actually uses lazy_high_charts instead.
 
